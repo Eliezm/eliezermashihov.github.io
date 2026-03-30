@@ -7,51 +7,68 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
 
-    <nav class="site-nav" id="site-nav">
-        <div class="nav-inner">
-            <a href="index.html" class="nav-name">Eliezer Mashihov</a>
-            <ul class="nav-list" id="nav-list">
-                <li><a href="pages/about.html" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+    <!-- HERO — full screen -->
+    <section class="hero">
 
+        <div class="hero-avatar">
+            <img src="assets/photo.jpg" alt="Eliezer Mashihov">
+        </div>
+
+        <h1 class="hero-name">Eliezer Mashihov</h1>
+        <p class="hero-tagline">data scientist · researcher · msc aspirant</p>
+        <p class="hero-bio">
+            Undergraduate Data Science student and industry data scientist,
+            working toward an MSc. I build models, write research,
+            and share everything I learn.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#about"    class="hero-btn hero-btn-primary">About Me</a>
+            <a href="#projects" class="hero-btn">Projects</a>
+            <a href="#research" class="hero-btn">Research</a>
+            <a href="#contact"  class="hero-btn">Contact</a>
+        </div>
+
+        <div class="hero-social">
+            <a href="mailto:your@email.com"                  class="hero-social-link">Email</a>
+            <a href="https://github.com/yourgithub"          class="hero-social-link" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/yourprofile"    class="hero-social-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#"                                       class="hero-social-link">CV ↓</a>
+        </div>
+
+        <div class="scroll-hint"><span>scroll</span></div>
+
+    </section>
+
+    <!-- MAIN CONTENT -->
     <div class="container">
 
-        <!-- HEADER -->
-        <header class="site-header">
-            <h1>Eliezer Mashihov</h1>
-            <p class="header-subtitle">Data Scientist &amp; Researcher</p>
-            <p class="header-intro">
-                Undergraduate Data Science student and industry data scientist, working toward
-                an MSc. I spend my days building models and pipelines that solve real business
-                problems, and my evenings doing research, writing papers, and building side
-                projects — all of which I publish here.
-            </p>
-            <div class="header-links">
-                <a href="mailto:your@email.com" class="header-link">Email</a>
-                <a href="https://github.com/yourgithub" class="header-link" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile" class="header-link" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="#" class="header-link">CV (PDF)</a>
-            </div>
-        </header>
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <p class="section-label">About</p>
+            <h2 class="section-heading">Background</h2>
+            <p class="section-desc">Who I am and what I'm currently working on.</p>
 
-        <!-- SKILLS -->
-        <section class="section" id="skills">
-            <p class="section-label">Skills</p>
-            <div class="skills-block">
+            <div class="about-text">
+                <p>
+                    I'm a data science undergraduate working in the industry
+                    and on track for an MSc. I'm passionate about applying machine learning to
+                    real-world problems and making research accessible through clear writing and
+                    open-source work.
+                </p>
+                <p>
+                    During the day I work as a data scientist, building models and pipelines that
+                    solve real business problems. Outside of work I research, write papers, and build
+                    personal projects — all published here.
+                </p>
+            </div>
+
+            <div class="skills-block" style="margin-top: 2rem;">
                 <div class="skill-row">
                     <span class="skill-group-label">Languages</span>
                     <span class="skill-items">Python, R, SQL, Bash</span>
@@ -69,11 +86,18 @@
                     <span class="skill-items">Git, Docker, Jupyter, VS Code</span>
                 </div>
             </div>
+
+            <div class="section-footer">
+                <a href="pages/about.html">Full background →</a>
+            </div>
         </section>
 
         <!-- PROJECTS -->
         <section class="section" id="projects">
             <p class="section-label">Projects</p>
+            <h2 class="section-heading">Selected Work</h2>
+            <p class="section-desc">Data science projects, ML experiments, and applications.</p>
+
             <div class="project-list">
 
                 <div class="project-entry">
@@ -135,6 +159,7 @@
                 </div>
 
             </div>
+
             <div class="section-footer">
                 <a href="pages/projects.html">See all projects →</a>
             </div>
@@ -143,6 +168,9 @@
         <!-- RESEARCH -->
         <section class="section" id="research">
             <p class="section-label">Research</p>
+            <h2 class="section-heading">Publications</h2>
+            <p class="section-desc">Academic papers and writings.</p>
+
             <div class="paper-list">
 
                 <div class="paper-entry">
@@ -192,6 +220,7 @@
                 </div>
 
             </div>
+
             <div class="section-footer">
                 <a href="pages/research.html">See all research →</a>
             </div>
@@ -200,23 +229,28 @@
         <!-- CONTACT -->
         <section class="section" id="contact">
             <p class="section-label">Contact</p>
+            <h2 class="section-heading">Get in touch</h2>
+
             <p class="contact-intro">
-                Open to research collaborations, data science discussions, and opportunities.
-                Feel free to reach out.
+                Open to research collaborations, data science discussions,
+                and new opportunities. Feel free to reach out.
             </p>
             <div class="contact-items">
-                <div class="contact-item">
+                <a href="mailto:your@email.com" class="contact-item">
                     <span class="contact-key">Email</span>
-                    <a href="mailto:your@email.com" class="contact-val">your@email.com</a>
-                </div>
-                <div class="contact-item">
+                    <span class="contact-val">your@email.com</span>
+                    <span class="contact-arrow">↗</span>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" class="contact-item" target="_blank" rel="noopener">
                     <span class="contact-key">LinkedIn</span>
-                    <a href="https://linkedin.com/in/yourprofile" class="contact-val" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a>
-                </div>
-                <div class="contact-item">
+                    <span class="contact-val">linkedin.com/in/yourprofile</span>
+                    <span class="contact-arrow">↗</span>
+                </a>
+                <a href="https://github.com/yourgithub" class="contact-item" target="_blank" rel="noopener">
                     <span class="contact-key">GitHub</span>
-                    <a href="https://github.com/yourgithub" class="contact-val" target="_blank" rel="noopener">github.com/yourgithub</a>
-                </div>
+                    <span class="contact-val">github.com/yourgithub</span>
+                    <span class="contact-arrow">↗</span>
+                </a>
             </div>
         </section>
 
