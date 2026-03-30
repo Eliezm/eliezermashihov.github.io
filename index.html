@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliezer Mashihov</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="site-nav" id="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-name">Eliezer Mashihov</a>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="pages/about.html" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="site-header">
+            <h1>Eliezer Mashihov</h1>
+            <p class="header-subtitle">Data Scientist &amp; Researcher</p>
+            <p class="header-intro">
+                Undergraduate Data Science student and industry data scientist, working toward
+                an MSc. I spend my days building models and pipelines that solve real business
+                problems, and my evenings doing research, writing papers, and building side
+                projects — all of which I publish here.
+            </p>
+            <div class="header-links">
+                <a href="mailto:your@email.com" class="header-link">Email</a>
+                <a href="https://github.com/yourgithub" class="header-link" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" class="header-link" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="#" class="header-link">CV (PDF)</a>
+            </div>
+        </header>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <p class="section-label">Skills</p>
+            <div class="skills-block">
+                <div class="skill-row">
+                    <span class="skill-group-label">Languages</span>
+                    <span class="skill-items">Python, R, SQL, Bash</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-group-label">ML / DL</span>
+                    <span class="skill-items">scikit-learn, PyTorch, TensorFlow, XGBoost, Keras</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-group-label">Data &amp; Viz</span>
+                    <span class="skill-items">Pandas, NumPy, Matplotlib, Seaborn, Plotly</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-group-label">Tools</span>
+                    <span class="skill-items">Git, Docker, Jupyter, VS Code</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+            <p class="section-label">Projects</p>
+            <div class="project-list">
+
+                <div class="project-entry">
+                    <div class="project-entry-top">
+                        <span class="project-entry-title">Project Title Here</span>
+                        <span class="project-entry-links">
+                            <a href="#" class="entry-link">GitHub ↗</a>
+                            <a href="#" class="entry-link">Demo ↗</a>
+                        </span>
+                    </div>
+                    <p class="project-entry-desc">
+                        Short description of what the project does, the problem it solves,
+                        and what techniques were applied. Keep it 2–3 sentences.
+                    </p>
+                    <div class="entry-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Classification</span>
+                    </div>
+                </div>
+
+                <div class="project-entry">
+                    <div class="project-entry-top">
+                        <span class="project-entry-title">NLP Project</span>
+                        <span class="project-entry-links">
+                            <a href="#" class="entry-link">GitHub ↗</a>
+                        </span>
+                    </div>
+                    <p class="project-entry-desc">
+                        Describe the NLP task, model used (BERT, GPT, etc.),
+                        dataset, and key findings or performance benchmarks.
+                    </p>
+                    <div class="entry-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">HuggingFace</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+
+                <div class="project-entry">
+                    <div class="project-entry-top">
+                        <span class="project-entry-title">Data Dashboard</span>
+                        <span class="project-entry-links">
+                            <a href="#" class="entry-link">GitHub ↗</a>
+                            <a href="#" class="entry-link">Demo ↗</a>
+                        </span>
+                    </div>
+                    <p class="project-entry-desc">
+                        Interactive dashboard built to visualise and explore a dataset
+                        with dynamic charts and filters.
+                    </p>
+                    <div class="entry-tags">
+                        <span class="tag">Plotly</span>
+                        <span class="tag">Dash</span>
+                        <span class="tag">Pandas</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="section-footer">
+                <a href="pages/projects.html">See all projects →</a>
+            </div>
+        </section>
+
+        <!-- RESEARCH -->
+        <section class="section" id="research">
+            <p class="section-label">Research</p>
+            <div class="paper-list">
+
+                <div class="paper-entry">
+                    <div class="paper-entry-top">
+                        <span class="paper-entry-title">Your Paper Title Goes Here</span>
+                        <span class="paper-entry-year">2024</span>
+                    </div>
+                    <p class="paper-entry-venue">Conference on Machine Learning (Example)</p>
+                    <p class="paper-entry-authors"><strong>Eliezer Mashihov</strong>, Co-Author Name</p>
+                    <p class="paper-entry-abstract">
+                        A concise summary of the paper. What problem does it address?
+                        What methods were used, and what were the key findings or contributions?
+                        Keep this to 3–4 sentences.
+                    </p>
+                    <div class="paper-entry-footer">
+                        <div class="entry-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Topic Area</span>
+                        </div>
+                        <div class="paper-entry-links">
+                            <a href="#" class="entry-link">PDF ↗</a>
+                            <a href="#" class="entry-link">Code ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper-entry">
+                    <div class="paper-entry-top">
+                        <span class="paper-entry-title">Another Research Paper Title</span>
+                        <span class="paper-entry-year">2023</span>
+                    </div>
+                    <p class="paper-entry-venue">Journal of Data Science (Example)</p>
+                    <p class="paper-entry-authors"><strong>Eliezer Mashihov</strong></p>
+                    <p class="paper-entry-abstract">
+                        Abstract text here. Describe what problem was addressed, the methods used,
+                        and the key results of the paper.
+                    </p>
+                    <div class="paper-entry-footer">
+                        <div class="entry-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                        <div class="paper-entry-links">
+                            <a href="#" class="entry-link">PDF ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="section-footer">
+                <a href="pages/research.html">See all research →</a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <p class="section-label">Contact</p>
+            <p class="contact-intro">
+                Open to research collaborations, data science discussions, and opportunities.
+                Feel free to reach out.
+            </p>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <span class="contact-key">Email</span>
+                    <a href="mailto:your@email.com" class="contact-val">your@email.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-key">LinkedIn</span>
+                    <a href="https://linkedin.com/in/yourprofile" class="contact-val" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-key">GitHub</span>
+                    <a href="https://github.com/yourgithub" class="contact-val" target="_blank" rel="noopener">github.com/yourgithub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <p>© 2025 Eliezer Mashihov</p>
+        </footer>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
